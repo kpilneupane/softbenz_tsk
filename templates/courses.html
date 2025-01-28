@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="text-center mb-4">
+        <h1 class="display-5 fw-bold text-primary">Our Courses</h1>
+        <p class="text-muted">Explore the list of courses available in our platform.</p>
+    </div>
+
+    <!-- course List -->
+    <div class="row">
+        {% for course in courses %}
+        <div class="col-md-4">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h5 class="card-title text-dark mb-2">{{ course.title }}</h5>
+                    <p class="card-text text-muted" style="font-size: 0.9rem;">
+                        <strong>Category:</strong> {{ course.category }}<br>
+                        <strong>Description:</strong>{{course.description}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

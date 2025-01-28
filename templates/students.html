@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container my-5">
+    <!-- Enhanced Heading -->
+    <div class="text-center mb-4">
+        <h1 class="display-5 fw-bold text-primary">Our Students</h1>
+        <p class="text-muted">Explore the list of students enrolled in our platform.</p>
+    </div>
+
+    <!-- Students List -->
+    <div class="row">
+        {% for student in students %}
+        <div class="col-md-4">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h5 class="card-title text-dark mb-2">{{ student.name }}</h5>
+                    <p class="card-text text-muted" style="font-size: 0.9rem;">
+                        <strong>Email:</strong> {{ student.email }}<br>
+                        <strong>Course:</strong>{{student.course}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

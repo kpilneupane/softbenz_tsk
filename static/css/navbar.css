@@ -1,0 +1,13 @@
+.navbar-nav.ms-auto {
+    margin-left: auto !important;
+}
+.navbar .bi-person-circle {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+.navbar .bi-person-circle:hover {
+    color: #8eb1ff;
+}
+.nav-link:hover .bi-person-circle {
+    color: #8eb1ff;
+}
