@@ -1,0 +1,887 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "app",
+        "model": "course"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "app",
+        "model": "student"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "app",
+        "model": "enrollment"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "myscxbwkuovsf8czc74dd029qt2htn61",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSE8pDAu3fsNZAYGqRqalHZl_HfbpAvd3nPOfYuI61Lj2nmOYxYXocXpdyNMT247yA9s90mmqS3zSHJX5EG7vE2ZX9fD_Tuo2OtWO12CtcoHZYfAXBwVV7wDMOCBPGvMxiaPzgKBQjq7gQpp2KqkEhjx-QLLgzeQ:1tcoYn:nQD0HQCkvXN6a74MXuUC6Dnw0eToK7gWffZ9GX5RZBE",
+        "expire_date": "2025-02-11T16:35:33.882Z"
+    }
+},
+{
+    "model": "app.course",
+    "pk": 1,
+    "fields": {
+        "title": "Chemistry",
+        "description": "Chemistry is a taught course. In this major, you will be learning about the different chemical reactions and compositions.",
+        "category": "document"
+    }
+},
+{
+    "model": "app.course",
+    "pk": 2,
+    "fields": {
+        "title": "MBA",
+        "description": "MBA is a taught model where you will be taught about business ideas development and entrepreneurship",
+        "category": "document"
+    }
+},
+{
+    "model": "app.course",
+    "pk": 3,
+    "fields": {
+        "title": "Comedy",
+        "description": "This is a humor development course where you will be taught to make fun of your colleagues",
+        "category": "video"
+    }
+},
+{
+    "model": "app.student",
+    "pk": 1,
+    "fields": {
+        "name": "Kapil Neupane",
+        "email": "kpilneupane11@gmail.com"
+    }
+},
+{
+    "model": "app.student",
+    "pk": 3,
+    "fields": {
+        "name": "Prachanda",
+        "email": "yemedi9160@ahaks.com"
+    }
+},
+{
+    "model": "app.student",
+    "pk": 4,
+    "fields": {
+        "name": "KP Oli",
+        "email": "cicoh85659@bmixr.com"
+    }
+},
+{
+    "model": "app.student",
+    "pk": 5,
+    "fields": {
+        "name": "Rajesh Hamal",
+        "email": "japov45723@ahaks.com"
+    }
+},
+{
+    "model": "app.enrollment",
+    "pk": 1,
+    "fields": {
+        "student": 1,
+        "course": 1,
+        "enrollment_date": "2025-01-28T06:33:25.817Z"
+    }
+},
+{
+    "model": "app.enrollment",
+    "pk": 3,
+    "fields": {
+        "student": 3,
+        "course": 2,
+        "enrollment_date": "2025-01-28T15:14:25.815Z"
+    }
+},
+{
+    "model": "app.enrollment",
+    "pk": 4,
+    "fields": {
+        "student": 1,
+        "course": 2,
+        "enrollment_date": "2025-01-28T17:49:43.487Z"
+    }
+},
+{
+    "model": "app.enrollment",
+    "pk": 5,
+    "fields": {
+        "student": 4,
+        "course": 3,
+        "enrollment_date": "2025-01-28T17:54:51.296Z"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add course",
+        "content_type": [
+            "app",
+            "course"
+        ],
+        "codename": "add_course"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change course",
+        "content_type": [
+            "app",
+            "course"
+        ],
+        "codename": "change_course"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete course",
+        "content_type": [
+            "app",
+            "course"
+        ],
+        "codename": "delete_course"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view course",
+        "content_type": [
+            "app",
+            "course"
+        ],
+        "codename": "view_course"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add student",
+        "content_type": [
+            "app",
+            "student"
+        ],
+        "codename": "add_student"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change student",
+        "content_type": [
+            "app",
+            "student"
+        ],
+        "codename": "change_student"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete student",
+        "content_type": [
+            "app",
+            "student"
+        ],
+        "codename": "delete_student"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view student",
+        "content_type": [
+            "app",
+            "student"
+        ],
+        "codename": "view_student"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add enrollment",
+        "content_type": [
+            "app",
+            "enrollment"
+        ],
+        "codename": "add_enrollment"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change enrollment",
+        "content_type": [
+            "app",
+            "enrollment"
+        ],
+        "codename": "change_enrollment"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete enrollment",
+        "content_type": [
+            "app",
+            "enrollment"
+        ],
+        "codename": "delete_enrollment"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view enrollment",
+        "content_type": [
+            "app",
+            "enrollment"
+        ],
+        "codename": "view_enrollment"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$Apw9uxotiuu6bb0FPIHXGz$B72OLU5QKR58uZfPE4DeGVkx3KQW1Cr088YguJj5Fo8=",
+        "last_login": "2025-01-28T16:35:33.869Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@softbenz.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-01-28T04:14:30.664Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2025-01-28T05:10:29.865Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "app",
+            "course"
+        ],
+        "object_id": "1",
+        "object_repr": "Chemistry",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2025-01-28T06:30:55.861Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "app",
+            "student"
+        ],
+        "object_id": "1",
+        "object_repr": "Student object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2025-01-28T06:32:46.575Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "app",
+            "student"
+        ],
+        "object_id": "1",
+        "object_repr": "Student object (1)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2025-01-28T06:33:25.819Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "app",
+            "enrollment"
+        ],
+        "object_id": "1",
+        "object_repr": "Kapil Neupane-Chemistry",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2025-01-28T06:35:30.285Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "app",
+            "course"
+        ],
+        "object_id": "2",
+        "object_repr": "MBA",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2025-01-28T06:36:43.907Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "app",
+            "student"
+        ],
+        "object_id": "2",
+        "object_repr": "Ramesh uncle ko xoro",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2025-01-28T06:37:32.103Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "app",
+            "enrollment"
+        ],
+        "object_id": "2",
+        "object_repr": "Ramesh uncle ko xoro-MBA",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2025-01-28T06:39:20.058Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "app",
+            "student"
+        ],
+        "object_id": "2",
+        "object_repr": "Ramesh uncle ko xoro",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2025-01-28T06:45:35.760Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "app",
+            "student"
+        ],
+        "object_id": "3",
+        "object_repr": "Prachanda",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2025-01-28T15:14:25.818Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "app",
+            "enrollment"
+        ],
+        "object_id": "3",
+        "object_repr": "Prachanda-MBA",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2025-01-28T16:37:18.114Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "app",
+            "student"
+        ],
+        "object_id": "4",
+        "object_repr": "KP Oli",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2025-01-28T17:10:45.667Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "app",
+            "student"
+        ],
+        "object_id": "5",
+        "object_repr": "Rajesh Hamal",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2025-01-28T17:49:43.489Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "app",
+            "enrollment"
+        ],
+        "object_id": "4",
+        "object_repr": "Kapil Neupane-MBA",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2025-01-28T17:54:37.982Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "app",
+            "course"
+        ],
+        "object_id": "3",
+        "object_repr": "Comedy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2025-01-28T17:54:51.612Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "app",
+            "enrollment"
+        ],
+        "object_id": "5",
+        "object_repr": "KP Oli-Comedy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2025-01-28T17:56:35.240Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "app",
+            "course"
+        ],
+        "object_id": "2",
+        "object_repr": "MBA",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Category\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2025-01-28T17:58:10.715Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "app",
+            "course"
+        ],
+        "object_id": "1",
+        "object_repr": "Chemistry",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+}
+]
