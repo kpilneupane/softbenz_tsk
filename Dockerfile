@@ -12,10 +12,10 @@ COPY . .
 
 # Copy entrypoint script
 COPY entrypoint.sh /app/entrypoint.sh
-
-RUN chmod +x entrypoint.sh
+RUN chmod +x /app/entrypoint.sh
 
 ENTRYPOINT ["/app/entrypoint.sh"]
+
 
 # port 8000 for the app
 EXPOSE 8000
