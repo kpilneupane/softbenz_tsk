@@ -8,6 +8,10 @@ services:
       - "8000:8000"
     volumes:
       - .:/app
+      - django_vol:/app/data
     environment:
       - DEBUG=1
       - DJANGO_ALLOWED_HOSTS=localhost
+
+volumes:
+  django_vol:

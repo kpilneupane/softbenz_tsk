@@ -11,19 +11,20 @@ class Home(TemplateView):
 class Dashboard(TemplateView):
     template_name = 'dashboard.html'
 
-    students = Student.objects.all()[:3]
-    student_info = []
-    for student in students:
-        course_enrolled = student.get_enrolled_courses()
-        student_info.append({
-            'name': student.name,
-            'email': student.email,
-            'course': ', '.join(course_enrolled) if course_enrolled else 'Not Enrolled',
-        })
-
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
-        context['students'] = self.student_info
+
+        students = Student.objects.all()[:3]
+        student_info = []
+        
+        for student in students:
+            course_enrolled = student.get_enrolled_courses()
+            student_info.append({
+                'name': student.name,
+                'email': student.email,
+                'course': ', '.join(course_enrolled) if course_enrolled else 'Not Enrolled',
+            })
+        context['students'] = student_info
         context['courses'] = Course.objects.all()[:3]
         return context
 
@@ -36,18 +37,20 @@ def course_list(request):
 class StudentView(TemplateView):
     template_name = 'students.html'
 
-    students = Student.objects.all()
-    student_info = []
-    for student in students:
-        course_enrolled = student.get_enrolled_courses()
-        student_info.append({
-            'name': student.name,
-            'email': student.email,
-            'course': ', '.join(course_enrolled) if course_enrolled else 'Not Enrolled',
-        })
+    
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
+
+        students = Student.objects.all()
+        student_info = []
+        for student in students:
+            course_enrolled = student.get_enrolled_courses()
+            student_info.append({
+                'name': student.name,
+                'email': student.email,
+                'course': ', '.join(course_enrolled) if course_enrolled else 'Not Enrolled',
+            })
         context['students'] = self.student_info
         return context
 
