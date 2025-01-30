@@ -51,7 +51,7 @@ class StudentView(TemplateView):
                 'email': student.email,
                 'course': ', '.join(course_enrolled) if course_enrolled else 'Not Enrolled',
             })
-        context['students'] = self.student_info
+        context['students'] = student_info
         return context
 
 
